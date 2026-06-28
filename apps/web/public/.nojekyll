@@ -1,0 +1,1 @@
+# Prevent GitHub Pages from running Jekyll on this export to ensure folders starting with an underscore (like _next) are served

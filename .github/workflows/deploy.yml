@@ -33,6 +33,9 @@ jobs:
           STATIC_EXPORT: 'true'
         run: npm run build:web
 
+      - name: Ensure .nojekyll exists in build output
+        run: touch apps/web/out/.nojekyll
+
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
