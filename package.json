@@ -9,6 +9,7 @@
   "scripts": {
     "dev:web": "npm run dev --workspace=apps/web",
     "build:web": "npm run build --workspace=apps/web",
+    "serve:static": "node scripts/serve-static.js",
     "test:networking": "jest libs/networking",
     "test": "jest"
   },

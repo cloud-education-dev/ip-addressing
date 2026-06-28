@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.STATIC_EXPORT === 'true' ? '/ip-addressing' : undefined,
+  basePath: process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (process.env.STATIC_EXPORT === 'true' ? '/ip-addressing' : undefined),
 };
 
 module.exports = nextConfig;
